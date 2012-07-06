@@ -1,0 +1,21 @@
+ <div class="footer">
+            <div class="gs96">
+                {pc:content action="category" catid="0" num="25" siteid="$siteid" order="listorder ASC"}
+                    <p class="footer_navi">
+                        <a href="{siteurl($siteid)}"> <span>首页</span></a></li>
+                        {loop $data $r}
+                        <a href="{$r[url]}"><span>{$r[catname]}</span></a> 
+                        {/loop}
+                    </p>
+                    {/pc}
+                    {php echo runhook('glogal_menu')}
+
+                <div class="copyright">
+                    <p>版权所有：中南科技培训学校    Copyright © 2006-2012</p>
+                    <p>地址：湖南省长沙市雨花区新建西路77号    邮编：410000    联系电话：0731-89913800</p>
+                    <p>邮箱：502989206@qq.com    <a href="#" target="blank">ICP备：湘000001号</a></p>
+                </div> <!-- E copyright -->
+            </div> <!-- E gs96 -->
+        </div> <!-- E footer -->
+    </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=7" />
+        <title>{if isset($SEO['title']) && !empty($SEO['title'])}{$SEO['title']}{/if}{$SEO['site_title']}</title>
+        <meta name="keywords" content="{$SEO['keyword']}">
+        <meta name="description" content="{$SEO['description']}">
+        <link href="{CSS_PATH}reset.css" rel="stylesheet" type="text/css" />
+        <link href="{CSS_PATH}default_blue.css" rel="stylesheet" type="text/css" />
+        <link href="{CSS_PATH}global.css" rel="stylesheet" type="text/css" />
+
+        <script type="text/javascript" src="{JS_PATH}jquery.min.js"></script>
+        <script type="text/javascript" src="{JS_PATH}easySlider1.7.js"></script>
+        <script type="text/javascript" src="{JS_PATH}MSClass.js"></script>
+    </head>
+    <body>
+        <div class="topbar">
+            <div class="gs96">
+                <ul class="sub_school">
+                    <li> <a href="#">教育集团总部</a> </li>
+                    <li> <a href="#">长沙岳麓区</a> </li>
+                    <li> <a href="#">长沙雨花区</a> </li>
+                    <li> <a href="#">深圳</a> </li>
+                    <li> <a href="#">衡阳</a> </li>
+                    <li> <a href="#">湘乡</a> </li>
+                    <li> <a href="#">韶山</a> </li>
+                    <li> <a href="#">福州</a> </li>
+                </ul> <!-- E sub_school -->
+
+                <p class="call"> <span>咨询电话：</span> <strong>0731-89913800</strong> </p> <!-- E call -->
+            </div> <!-- E gs96 -->
+        </div> <!-- E topbar -->
+
+
+        <div class="header">
+            <div class="gs96">
+                <div class="logo">
+                    <a href="#"></a>
+                </div> <!-- E logo -->
+
+                <div class="banner">
+                    <table class="h_op">
+                        <tr>
+                            <td><a href="/daxue/index.php?m=admin&c=index&a=login&pc_hash=XDRCFR" target="_blank">后台管理</a></td>
+                            <td><a href="#">收藏本站</a></td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="#">学校地址</a></td>
+                            <td><a href="#">集团邮局</a></td>
+                        </tr>
+                    </table>
+                </div> <!-- E banner -->
+
+                <div class="navi">
+                    {pc:content action="category" catid="0" num="25" siteid="$siteid" order="listorder ASC"}
+                    <ul class="topnavi">
+                        <li><a href="{siteurl($siteid)}"> <span>首页</span></a></li>
+                        {loop $data $r}
+                        <li>
+                        <a href="{$r[url]}"><span>{$r[catname]}</span></a>
+<!--                        {pc:content action="category" catid="$r[catid]" num="15" siteid="$siteid" order="listorder ASC"}-->
+<!--                        <ul>-->
+<!--                            {loop $data $r2}-->
+<!--                            <li><a href="{$r[url]}">{$r2[catname]}</a><span> | </span></li>-->
+<!--                            {/loop}-->
+<!--                        </ul>-->
+<!--                        <img style="" class="downarrowclass" src="{IMG_PATH}down.gif">-->
+<!--                        {/pc}-->
+                        </li>
+                        {/loop}
+                    </ul>
+                    {/pc}
+                    {php echo runhook('glogal_menu')}
+                </div> <!-- E navi -->
+            </div> <!-- E gs96 -->
+        </div> <!-- E header -->
+
+        <div class="clear"></div>
+
+

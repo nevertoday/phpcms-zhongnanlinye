@@ -1,0 +1,626 @@
+{template "content","header"}
+<!-- login -->
+<div class="loginbar">
+    <div class="gs96">
+        <h3>学员登录:</h3>
+        <form action="#">
+            <p class="row">
+            <label for="xueyuan_name">学员编号</label>
+            <input id="xueyuan_name" name="xueyuan_name" type="text" />
+            </p>
+            <p class="row">
+            <label for="xueyuan_pwd">密码</label>
+            <input id="xueyuan_pwd" name="pwd" type="password" />
+            </p>
+            <p class="row row_bt">
+            <a href="#" class="login_bt">登录</a>
+            <a href="#" class="find_bt">忘记密码？</a>
+            </p>
+        </form>
+
+        <ul>
+            <li> <a href="#">学号查询</a> </li>
+            <li> <a href="#">登录须知</a> </li>
+        </ul>
+    </div> <!-- E gs96 -->
+</div> <!-- E loginbar -->
+
+
+
+<!--main-->
+<div class="main main_index">
+    <div class="gs96">
+        <div class="col-auto">
+            <div class="box">
+                <h2> <a href="#"> 自学招生考试 </a> </h2>
+                <ul class="course_navi">
+                    <li>
+                    <a href="#" class="heading">自学考试远程班</a>
+                    <ul>
+                        {pc:content action="position" posid="19" catid="17"  num="9" order="listorder DESC" }
+                        {loop $data $v}
+                        <li> <a href="{$v[url]}" {title_style($v[style])}>{$v[title]}</a> </li>
+                        {/loop}
+                        {/pc}
+                        </li>
+
+                        <li>
+                        <a href="#" class="heading">广东外语外贸大学</a>
+                        <ul>
+                            {pc:content action="position" posid="20" catid="17"  num="9" order="listorder DESC" }
+                            {loop $data $v}
+                            <li> <a href="{$v[url]}" {title_style($v[style])}>{$v[title]}</a> </li>
+                            {/loop}
+                            {/pc}  
+                        </ul>
+                        </li>
+
+                        <li>
+                        <a href="#" class="heading">华南师范大学</a>
+                        <ul>
+                            {pc:content action="position" posid="21" catid="17"  num="9" order="listorder DESC" }
+                            {loop $data $v}
+                            <li> <a href="{$v[url]}" {title_style($v[style])}>{$v[title]}</a> </li>
+                            {/loop}
+                            {/pc} 
+                        </ul>
+                        </li>
+
+                        <li>
+                        <a href="#" class="heading">华南农业大学</a>
+                        <ul>
+                            {pc:content action="position" posid="22" catid="17"  num="9" order="listorder DESC" }
+                            {loop $data $v}
+                            <li> <a href="{$v[url]}" {title_style($v[style])}>{$v[title]}</a> </li>
+                            {/loop}
+                            {/pc} 
+                        </ul>
+                        </li>
+                    </ul> <!-- E course_navi -->
+                </div> <!-- E box -->
+
+
+                <div class="box">
+                    <h2><a href="#"> 成人高考招生</a></h2>
+                    <ul class="course_navi">
+                        <li>
+                        <a href="#" class="heading">河源职业技术学院</a>
+                        <ul>
+                            {pc:content action="position" posid="23" catid="22"  num="9" order="listorder DESC" }
+                            {loop $data $v}
+                            <li> <a href="{$v[url]}" {title_style($v[style])}>{$v[title]}</a> </li>
+                            {/loop}
+                            {/pc} 
+                        </ul>
+                        </li>
+
+                        <li>
+                        <a href="#" class="heading">广东岭南学院</a>
+                        <ul>
+                            {pc:content action="position" posid="24" catid="22"  num="9" order="listorder DESC" }
+                            {loop $data $v}
+                            <li> <a href="{$v[url]}" {title_style($v[style])}>{$v[title]}</a> </li>
+                            {/loop}
+                            {/pc} 
+                        </ul>
+                        </li>
+
+                        <li>
+                        <a href="#" class="heading">首都经济贸易大学</a>
+                        <ul>
+                            {pc:content action="position" posid="25" catid="22"  num="9" order="listorder DESC" }
+                            {loop $data $v}
+                            <li> <a href="{$v[url]}" {title_style($v[style])}>{$v[title]}</a> </li>
+                            {/loop}
+                            {/pc} 
+                        </ul>
+                        </li>
+
+                        <li>
+                        <a href="#" class="heading">四川大学</a>
+                        <ul>
+                            {pc:content action="position" posid="26" catid="22"  num="9" order="listorder DESC" }
+                            {loop $data $v}
+                            <li> <a href="{$v[url]}" {title_style($v[style])}>{$v[title]}</a> </li>
+                            {/loop}
+                            {/pc} 
+                        </ul>
+                        </li>
+                    </ul> <!-- E course_navi -->
+                </div> <!-- E box -->
+
+
+                <div class="box">
+                    <h2> <a href="#">湖南电大招生</a></h2>
+                    <ul class="course_navi">
+                        <li>
+                        <a href="#" class="heading">湖南广播电视大学</a>
+                        <ul>
+                            <li> <a href="#">2012年广州招生</a> </li>
+                            <li> <a href="#">2012年江门招生</a> </li>
+                            <li> <a href="#">2012年河源招生</a> </li>
+                            <li> <a href="#">2012年湛江招生</a> </li>
+                        </ul>
+                        </li>
+
+                        <li>
+                        <a href="#" class="heading">湖南广播电视大学</a>
+                        <ul>
+                            <li> <a href="#">2012年东莞招生</a> </li>
+                            <li> <a href="#">2012年惠州招生</a> </li>
+                        </ul>
+                        </li>
+
+                    </ul> <!-- E course_navi -->
+                </div> <!-- E box -->
+
+
+                <div class="box">
+                    <h2><a href="#"> 湖南电大招生</a></h2>
+                    <ul class="course_navi course_system">
+                        <li> <a href="#">网上课堂</a> </li>
+                        <li> <a href="#">课程试听</a> </li>
+                        <li> <a href="#">职业讲堂</a> </li>
+                        <li> <a href="#">我的学籍</a> </li>
+                        <li> <a href="#">教务通知</a> </li>
+                        <li> <a href="#">学号查询</a> </li>
+                    </ul> <!-- E course_navi -->
+                </div> <!-- E box -->
+
+            </div> <!-- E col-left -->
+
+            <div class="col-left">
+                <div class="section section1">
+                    <div class="box32">
+                        <div class="title"><h3>新闻动态</h3><a href="#" class="more">更多&gt;&gt;</a></div>
+                        <div class="first_list">
+                            {pc:content action="lists" catid="41" thumb="1" num="1" order="listorder DESC"}
+                            {loop $data $v}
+                            <div class="img">
+                                <a href="{$v[url]}" {title_style($v[style])}><img src="{thumb($v[thumb],120,90)}" width="120" height="90" alt="{$v[title]}" /></a>
+                            </div> <!-- E img -->
+                            {/loop}
+                            {/pc}
+
+                            {pc:content action="lists" catid="41" thumb="1" num="1" order="listorder DESC"}
+                            {loop $data $v}
+                            <div class="txt">
+                                <h3><a href="{$v[url]}" {title_style($v[style])}>{$v[title]}</a></h3>
+                                <p class="brief">{str_cut($v[description],165,'...')}</p>
+                                <p class="time">[{date('Y.m.d', $v[updatetime])}]</p>
+                            </div> <!-- E txt -->
+                            {/loop}
+                            {/pc}
+                        </div> <!-- E first_list -->
+
+                        <ul class="list">
+                            {pc:content action="lists" catid="41" num="7" order="listorder DESC"}
+                            {loop $data $v}
+                            <li> <a href="{$v[url]}" {title_style($v[style])}>{$v[title]}</a><span class="time">[{date('Y.m.d', $v[updatetime])}]</span> </li>
+                            {/loop}
+                            {/pc}
+                        </ul>
+                    </div> <!-- E box32 -->
+
+                    <div class="box31">
+                        <div class="title"><h3>招生专题</h3><a href="{$CATEGORYS[13]['url']}" class="more">更多&gt;&gt;</a></div>
+
+                        <ul class="list">
+
+                            {pc:content action="lists" catid="13" num="6"}
+                            {loop $data $v}
+                            <li> <a href="{$v[url]}" title="{$v[title]}" {title_style($v[style])}>{str_cut($v[title],42,'...')}</a><span class="time">[{date('Y.m.d', $v[updatetime])}]</span> </li>
+                            {/loop}
+                            {/pc}
+                        </ul>
+
+                        <div class="clear"></div>
+
+                        <div id="ad1" class="section_ad"> <!-- ad1 -->
+                            <ul>
+                                {pc:content action="lists" catid="42" num="5" order="listorder DESC"}
+                                {loop $data $v}
+                                <li> <a href="{$v[url]}"><img src="{thumb($v[thumb],260,100)}" width="260" height="100" /></a> </li>
+                                {/loop}
+                                {/pc}
+                            </ul>
+                        </div> <!-- E section_ad -->
+
+                    </div> <!-- E box31 -->
+                </div> <!-- E section -->
+
+
+                
+                <script type="text/javascript">
+                    $(document).ready(function(){	
+                        $("#ad1").easySlider({
+                            auto: true,
+                            continuous: true,
+                            controlsShow: false,
+                            speed: 1000,
+                            pause: 9000
+                        });
+                    });
+                </script>
+
+
+                <div class="section section2">
+                    <div class="box2 mr10">
+                        <div class="title"><h3>政策法规</h3><a href="{$CATEGORYS[26]['url']}" class="more">更多&gt;&gt;</a></div>
+
+                        <ul class="list">
+                            {pc:content action="lists" catid="17" order="listorder DESC" num="6"}
+                            {loop $data $r}
+                            <li> <a href="{$r[url]}">{str_cut($v[title],90,'...')}</a><span class="time">[{date('Y.m.d', $r[updatetime])}]</span> </li>
+                            {/loop}
+                            {/pc}
+                        </ul>
+
+                    </div> <!-- E box2 -->
+
+                    <div class="box2">
+                        <div class="title"><h3>自考动态</h3><a href="{$CATEGORYS[15]['url']}" class="more">更多&gt;&gt;</a></div>
+
+                        <ul class="list">
+                            {pc:content action="lists" catid="15" order="listorder DESC" num="6"}
+                            {loop $data $r}
+                            <li> <a href="{$r[url]}">{str_cut($v[title],90,'...')}</a><span class="time">[{date('Y.m.d', $r[updatetime])}]</span> </li>
+                            {/loop}
+                            {/pc}
+                        </ul>
+
+                    </div> <!-- E box2 -->
+                </div> <!-- E section2 -->
+
+
+                <div class="section section3">
+                    <div class="box32">
+                        <div class="title">
+                            <h3>学习天地</h3><a href="{$CATEGORYS[43]['url']}" class="more">更多&gt;&gt;</a>
+                            <ul class="ul_tab">
+                                <li> <a href="#">视频教程</a> </li>
+                                <li> <a href="#">资料下载</a> </li>
+                                <li> <a href="#">常见问题</a> </li>
+                            </ul> <!-- E ul_tab -->
+                        </div>
+
+                        {pc:content action="lists" catid="44" order="listorder DESC" thumb="1" num="1"}
+                        {loop $data $r}
+                        <div class="first_list thumb">
+                            <div class="img">
+                                <a href="{$r[url]}"><img src="{thumb($r[thumb],120,90)}" alt="{$r[title]}" width="120" height="90" /></a>
+                            </div> <!-- E img -->
+
+                            <div class="txt">
+                                <h4> <a href="{$r[url]}">{str_cut($r[title],68,'...')}</a> </h4>
+                                <p><a href="{$r[url]}">{str_cut($v[description],165,'...')}</a></p>
+                                <p class="time">[{date('Y.m.d', $r[updatetime])}]</p>
+                            </div> <!-- E txt -->
+                        </div> <!-- E thumb -->
+                        {/loop}
+                        {/pc}
+
+
+
+                        <!--                    <div class="img video_img">-->
+                            <!--                      <ul>-->
+                                <!--                        <li>-->
+                                <!--                        {pc:content action="lists" catid="26" thumb="1" num="1" order="listorder DESC"}-->
+                                <!--                        {loop $data $v}-->
+                                <!--                        <a href="{$v[url]}"><img src="{thumb($v[thumb],40,85)}" alt="{$v[title]}" /></a>-->
+                                <!--                        {/loop}-->
+                                <!--                        {/pc}-->
+                                <!--                        </li>-->
+                                <!--                      </ul>-->
+                            <!--                    </div> |+ E img +|-->
+
+                        <div class="txt">
+                            <ul class="list">
+                                {pc:content action="lists" catid="44" order="listorder DESC" num="4"}
+                                {loop $data $r}
+                                <li> <a href="{$r[url]}" title="{$r[title]}">{$r[title]}</a><span class="time">[{date('Y.m.d', $r[updatetime])}]</span> </li>
+                                {/loop}
+                                {/pc}
+                            </ul>
+                        </div> <!-- E txt -->
+
+                    </div> <!-- E box32 -->
+
+                    <div class="box31">
+                        <div class="title"><h3>教务通知</h3><a href="{$CATEGORYS[48]['url']}" class="more">更多&gt;&gt;</a></div>
+                        <div class="txt">
+                            {pc:content action="lists" posid="10" catid="48" num="1" order="listorder DESC"}
+                            {loop $data $v}
+                            <h4> <a href="{$v[url]}">{$v[title]}</a> </h4>
+                            <p class="brief"><a href="{$v[url]}">{str_cut($v[description],600,'...')}</a></p>
+                            <p class="zln_author">中南科技培训学校</p>
+                            <p class="zln_time">[{date('Y.m.d', $v[updatetime])}]</p>
+                            {/loop}
+                            {/pc}
+                        </div> <!-- E txt -->
+                    </div> <!-- E box31 -->
+                </div> <!-- E section3 -->
+
+                <div class="clear"></div>
+
+                <div class="section section_slider">
+                    <div class="title">
+                        <h3>图说中南</h3><a href="{$CATEGORYS[47]['url']}" class="more">更多&gt;&gt;</a>
+                        <DIV class="QQnavbar"><SPAN id="QQpre"></SPAN><UL id="QQTab"><li class="active"></li><li></li><li></li></UL><SPAN id="QQnext"></SPAN></DIV>
+                    </div>
+
+                    <div class="QQbed">
+                        <div id="QQMarquee">
+                            <ul class="zln_pic" id="QQMarqueeCoutent">
+                                <li> 
+                                {pc:content action="lists" catid="47" thumb="1" num="6" order="listorder DESC"}
+                                {loop $data $v}
+                                <a href="{$v[url]}"><img src="{thumb($v[thumb],150,120)}" width="150" height="120" alt="{$v[title]}" /></a>
+                                {/loop}
+                                {/pc}
+                                </li>
+                            </ul> <!-- E zln_pic -->
+                        </div> <!-- E QQMarquee -->
+                    </div> <!-- E QQbed -->
+                </div> <!-- E section section_slider -->
+
+
+                <script type="text/javascript">
+                    /*********DIV + CSS开始等待、间歇滚动、TAB点击切换、点击控制左右滑动实例(缓动)***************/
+                    var QQMarqueeControl=new Marquee(["QQMarquee","QQMarqueeCoutent","QQTab","onclick"],2,0.5,790,130,20,5000,5000)	//DIV + CSS开始等待、间歇滚动、TAB点击切换、点击控制左右滑动实例(缓动)
+                    $("QQpre").onclick=function(){QQMarqueeControl.Run(3)};		//跳过等待时间向右滚动后保持原向运动
+                    $("QQnext").onclick=function(){QQMarqueeControl.Run(2)};	//跳过等待时间向左滚动后保持原向运动
+                </script>
+
+
+
+                <div class="section section_4">
+                    <div class="box32">
+                        <div class="title"><h3>自学考试</h3><a href="#" class="more">更多&gt;&gt;</a></div>
+                        {pc:content action="lists" catid="6" order="listorder DESC" thumb="1" num="1"}
+                        {loop $data $r}
+                        <div class="first_list thumb">
+                            <div class="img">
+                                <a href="{$r[url]}" title="{$r[title]}"><img src="{thumb($r[thumb],120,90)}" alt="{$r[title]}" width="120" height="90" /></a>
+                            </div> <!-- E img -->
+
+                            <div class="txt">
+                                <h4> <a href="{$r[url]}" title="{$r[title]}">{str_cut($r[title],68,'...')}</a> </h4>
+                                <p><a href="{$r[url]}" title="{$r[title]}">{str_cut($r[description],165,'...')}</a></p>
+                                <p class="time">[{date('Y.m.d', $r[updatetime])}]</p>
+                            </div> <!-- E txt -->
+                        </div> <!-- E thumb -->
+                        {/loop}
+                        {/pc}
+
+                        <ul class="list list21 mr10">
+                            {pc:content action="lists" catid="6" order="listorder DESC" num="5"}
+                            {loop $data $r}
+                            <li> <a href="{$r[url]}" title="{$r[title]}">{str_cut($r[title],42,'...')}</a><span class="time">[{date('Y.m.d', $r[updatetime])}]</span> </li>
+                            {/loop}
+                            {/pc}
+                        </ul> <!-- E list21 -->
+
+                        <ul class="list list21">
+                            {pc:content action="lists" catid="6" order="listorder DESC" num="5"}
+                            {loop $data $r}
+                            <li> <a href="{$r[url]}" title="{$r[title]}">{str_cut($r[title],42,'...')}</a><span class="time">[{date('Y.m.d', $r[updatetime])}]</span> </li>
+                            {/loop}
+                            {/pc}
+                        </ul> <!-- E list21 -->
+                    </div> <!-- E box32 -->
+
+                    <div class="box31">
+                        <div class="title"><h3>自考工具</h3><a href="#" class="more">更多&gt;&gt;</a></div>
+
+                        <div class="tool_box">
+                            <div class="tool_box_bd">
+                                <ul>
+                                    {pc:content action="position" posid="14" catid="16"  num="9" order="listorder DESC" }
+                                    {loop $data $v}
+                                    <li><a href="{$v[url]}" title="{$r[title]}"><img src="{thumb($v[thumb],70,40)}" width="70" height="40" alt="{$v[title]}" /></a><h5><a href="{$v[url]}">{$v[title]}</a></h5></li>
+                                    {/loop}
+                                    {/pc}
+                                </ul>
+                            </div> <!-- E tool_box_bd -->
+                        </div> <!-- E tool_box -->
+                    </div> <!-- E box31 -->
+                </div> <!-- E section_4 -->
+
+
+
+                <div class="section section_4">
+                    <div class="box32">
+                        <div class="title"><h3>成人教育</h3><a href="#" class="more">更多&gt;&gt;</a></div>
+                        {pc:content action="lists" catid="7" order="listorder DESC" thumb="1" num="1"}
+                        {loop $data $r}
+                        <div class="first_list thumb">
+                            <div class="img">
+                                <a href="{$r[url]}" title="{$r[title]}"><img src="{thumb($r[thumb],120,90)}" alt="{$r[title]}" width="120" height="90" /></a>
+                            </div> <!-- E img -->
+
+                            <div class="txt">
+                                <h4> <a href="{$r[url]}" title="{$r[title]}">{str_cut($r[title],68,'...')}</a> </h4>
+                                <p><a href="{$r[url]}" title="{$r[title]}">{str_cut($r[description],165,'...')}</a></p>
+                                <p class="time">[{date('Y.m.d', $r[updatetime])}]</p>
+                            </div> <!-- E txt -->
+                        </div> <!-- E thumb -->
+                        {/loop}
+                        {/pc}
+
+                        <ul class="list list21 mr10">
+                            {pc:content action="lists" catid="7" order="listorder DESC" num="5"}
+                            {loop $data $r}
+                            <li> <a href="{$r[url]}" title="{$r[title]}">{str_cut($r[title],42,'...')}</a><span class="time">[{date('Y.m.d', $r[updatetime])}]</span> </li>
+                            {/loop}
+                            {/pc}
+                        </ul> <!-- E list21 -->
+
+                        <ul class="list list21">
+                            {pc:content action="lists" catid="7" order="listorder DESC" num="5"}
+                            {loop $data $r}
+                            <li> <a href="{$r[url]}" title="{$r[title]}">{str_cut($r[title],42,'...')}</a><span class="time">[{date('Y.m.d', $r[updatetime])}]</span> </li>
+                            {/loop}
+                            {/pc}
+                        </ul> <!-- E list21 -->
+                    </div> <!-- E box32 -->
+
+                    <div class="box31">
+                        <div class="title"><h3>成考工具</h3><a href="#" class="more">更多&gt;&gt;</a></div>
+
+                        <div class="tool_box">
+                            <div class="tool_box_bd">
+                                <ul>
+                                    {pc:content action="position" posid="14" catid="21"  num="9" order="listorder DESC" }
+                                    {loop $data $v}
+                                    <li><a href="{$v[url]}" title="{$r[title]}"><img src="{thumb($v[thumb],70,40)}" width="70" height="40" alt="{$v[title]}" /></a><h5><a href="{$v[url]}">{$v[title]}</a></h5></li>
+                                    {/loop}
+                                    {/pc}
+                                </ul>
+                            </div> <!-- E tool_box_bd -->
+                        </div> <!-- E tool_box -->
+                    </div> <!-- E box31 -->
+                </div> <!-- E section_4 -->
+
+
+                <div class="section section_4">
+                    <div class="box32">
+                        <div class="title"><h3>远程教育</h3><a href="#" class="more">更多&gt;&gt;</a></div>
+                        {pc:content action="lists" catid="8" order="listorder DESC" thumb="1" num="1"}
+                        {loop $data $r}
+                        <div class="first_list thumb">
+                            <div class="img">
+                                <a href="{$r[url]}" title="{$r[title]}"><img src="{thumb($r[thumb],120,90)}" alt="{$r[title]}" width="120" height="90" /></a>
+                            </div> <!-- E img -->
+
+                            <div class="txt">
+                                <h4> <a href="{$r[url]}" title="{$r[title]}">{str_cut($r[title],68,'...')}</a> </h4>
+                                <p><a href="{$r[url]}" title="{$r[title]}">{str_cut($r[description],165,'...')}</a></p>
+                                <p class="time">[{date('Y.m.d', $r[updatetime])}]</p>
+                            </div> <!-- E txt -->
+                        </div> <!-- E thumb -->
+                        {/loop}
+                        {/pc}
+
+                        <ul class="list list21 mr10">
+                            {pc:content action="lists" catid="8" order="listorder DESC" num="5"}
+                            {loop $data $r}
+                            <li> <a href="{$r[url]}">{str_cut($r[title],42,'...')}</a><span class="time">[{date('Y.m.d', $r[updatetime])}]</span> </li>
+                            {/loop}
+                            {/pc}
+                        </ul> <!-- E list21 -->
+
+                        <ul class="list list21">
+                            {pc:content action="lists" catid="8" order="listorder DESC" num="5"}
+                            {loop $data $r}
+                            <li> <a href="{$r[url]}" title="{$r[title]}">{str_cut($r[title],42,'...')}</a><span class="time">[{date('Y.m.d', $r[updatetime])}]</span> </li>
+                            {/loop}
+                            {/pc}
+                        </ul> <!-- E list21 -->
+                    </div> <!-- E box32 -->
+
+                    <div class="box31 w_box31">
+                        <div class="title"><h3>远程教育工具箱</h3><a href="#" class="more">更多&gt;&gt;</a></div>
+
+                        <div class="tool_box">
+                            <div class="tool_box_bd">
+                                <ul>
+                                    {pc:content action="position" posid="14" catid="28"  num="9" order="listorder DESC" }
+                                    {loop $data $v}
+                                    <li><a href="{$v[url]}"><img src="{thumb($v[thumb],70,40)}" width="70" height="40" alt="{$v[title]}" /></a><h5><a href="{$v[url]}">{$v[title]}</a></h5></li>
+                                    {/loop}
+                                    {/pc}
+                                </ul>
+                            </div> <!-- E tool_box_bd -->
+                        </div> <!-- E tool_box -->
+                    </div> <!-- E box31 -->
+                </div> <!-- E section_4 -->
+
+
+                <div id="ad2" class="section section_ad">
+                    <ul>
+                        {pc:content action="lists" catid="50" num="5" order="listorder DESC"}
+                        {loop $data $v}
+                        <li> <a href="{$v[url]}"><img src="{thumb($v[thumb],790,80)}" width="790" height="80" /></a> </li>
+                        {/loop}
+                        {/pc}
+                    </ul>
+                </div> <!-- E section_ad -->
+
+                <script type="text/javascript">
+                    $(document).ready(function(){	
+                        $("#ad2").easySlider({
+                            auto: true,
+                            continuous: true,
+                            controlsShow: false,
+                            speed: 1000,
+                            pause: 6000
+                        });
+                    });
+                </script>
+
+
+
+                <div class="section section_map">
+                    <div class="title"><h3>友情链接/合作伙伴</h3></div>
+                    <ul>
+                        <li class="link_head">
+                        <a href="#" class="heading">自学考试</a>
+                        <ul>
+                            {pc:content action="position" posid="15" catid="49"  num="9" order="listorder DESC" }
+                            {loop $data $v}
+                            <li> <a href="{$v[url]}">{$v[title]}</a> </li>
+                            {/loop}
+                            {/pc}
+                        </ul>
+                        </li>
+                        <li class="link_head">
+                        <a href="#" class="heading">成人高考</a>
+                        <ul>
+                            {pc:content action="position" posid="16" catid="49"  num="9" order="listorder DESC" }
+                            {loop $data $v}
+                            <li> <a href="{$v[url]}">{$v[title]}</a> </li>
+                            {/loop}
+                            {/pc}
+                        </ul>
+                        </li>
+                        <li class="link_head">
+                        <a href="#" class="heading">网络教育</a>
+                        <ul>
+                            {pc:content action="position" posid="17" catid="49"  num="9" order="listorder DESC" }
+                            {loop $data $v}
+                            <li> <a href="{$v[url]}">{$v[title]}</a> </li>
+                            {/loop}
+                            {/pc}
+                        </ul>
+                        </li>
+                        <li class="link_head">
+                        <a href="#" class="heading">合作院校</a>
+                        <ul>
+                            {pc:content action="position" posid="18" catid="49"  num="9" order="listorder DESC" }
+                            {loop $data $v}
+                            <li> <a href="{$v[url]}">{$v[title]}</a> </li>
+                            {/loop}
+                            {/pc}
+                        </ul>
+                        </li>
+                    </ul>
+                </div>  <!-- E section_map -->
+
+
+
+                <div class="section_links">
+                    <ul>
+                        <li> <a href="#" class="img"><img src="#" alt="" /></a> <a href="#" class="txt">湖南教育自考</a> </li>
+                        <li> <a href="#" class="img"><img src="#" alt="" /></a> <a href="#" class="txt">湖南教育自考</a> </li>
+                        <li> <a href="#" class="img"><img src="#" alt="" /></a> <a href="#" class="txt">湖南教育自考</a> </li>
+                        <li> <a href="#" class="img"><img src="#" alt="" /></a> <a href="#" class="txt">湖南教育自考</a> </li>
+                        <li> <a href="#" class="img"><img src="#" alt="" /></a> <a href="#" class="txt">湖南教育自考</a> </li>
+                        <li> <a href="#" class="img"><img src="#" alt="" /></a> <a href="#" class="txt">湖南教育自考</a> </li>
+                    </ul>
+                </div> <!-- E section_links -->
+            </div> <!-- E col-auto -->
+        </div> <!-- E gs96 -->
+    </div> <!-- E main -->
+
+    {template "content","footer"}
